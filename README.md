@@ -1,2 +1,2 @@
-# macros-foundry-vtt
+# Macros
 Macros to Foundry Virtual Tabletop
