@@ -44,6 +44,8 @@ const sendRollMessage = (roll, {content, rollMode}) => {
 	game.settings.set('core', 'rollMode', rollMode);
 
 	roll.toMessage({
+		user: game.user._id,
+		speaker: ChatMessage.getSpeaker(),
 		flavor: content,
 	});
 
