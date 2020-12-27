@@ -1,0 +1,17 @@
+<div id="receivers">
+    <div class="receiver">
+        <input type="checkbox" class="message-receiver" data-user-id=${user._id}> <span>${user.name}[${user.charname}]</span> </br>
+    </div>
+</div>
+<hr>
+<div class="text-block">
+    <label for='message-content'>Mensagem</label>
+    <textarea id="message-content"></textarea>
+</div>
+
+<style>
+    .receiver {
+        display: flex;
+        align-items: center;
+    }
+</style>
