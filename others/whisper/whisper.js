@@ -1,5 +1,5 @@
 const getUserBlocks = () => {
-    const usersWithActors = game.users.filter(user => user.character != null && user != game.user)
+    const usersWithActors = game.users.filter(user => user.character != null && user != game.user && user.active)
     const actorsBlock = usersWithActors.map(user => `
         <div class="receiver">
             <input type="checkbox" class="message-receiver" data-user-id=${user._id}> <span>${user.name} [${user.charname}]</span> </br>
